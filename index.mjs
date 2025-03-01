@@ -1,1 +1,10 @@
-
+import path from 'path';
+const filePath = './data/example.txt';
+const dirName = path.dirname(filePath);
+console.log('Directorio Base:',dirName);
+const baseName = path.basename(filePath,'.txt');
+console.log('Nombre del Archivo',baseName);
+const extName = path.extname(filePath);
+console.log('Extencion de Archivo',extName);
+const newPath = path.join('/user','docs','newFile.txt');
+console.log('Nueva Ruta:',newPath);
